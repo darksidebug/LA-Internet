@@ -53,7 +53,7 @@
             <div class="row mt-4">
                 <div class="col-lg-8 col-md-12">
                     <div class="text-left pb-3">
-                        <h2 class="h5 text-gray mb-0"><strong>TOTAL</strong> <span class="text-success h4"><strong>0.00</strong></span></h2>
+                        <h2 class="h5 text-gray mb-0"><strong>TOTAL: </strong> <span class="text-success h4"><strong>0.00</strong></span></h2>
                     </div>
                 </div>
             </div>
