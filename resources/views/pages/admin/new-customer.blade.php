@@ -1,7 +1,7 @@
 @extends('layout.admin.main-layout')
 
 @section('content')
-    <div class="container-fluid mt-0">
+    <div class="container-fluid mt-5">
         <form method="POST" action="" class="user">
              @csrf
             <div class="row">
