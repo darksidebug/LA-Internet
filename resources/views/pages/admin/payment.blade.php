@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-left pb-3">
-                        <h2 class="h5 text-gray mb-0"><strong>LISTS OF CUSTOMERS</strong></h2>
+                        <h2 class="h5 text-gray mb-0"><strong>SEARCH CUSTOMER</strong></h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-8">
