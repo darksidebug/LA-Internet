@@ -15,7 +15,7 @@
                                     <label class="mt-1 mr-1">Search</label>
                                     <input type="text" name='username' class="form-control form-control-search rounded-sm" value="{{old('username')}}" placeholder="Account number">
                                     <button type="submit" class="btn btn-success btn-search rounded-sm ml-1 d-flex justify-content-between align-items-center">
-                                    <i data-feather="search" width="20" class="mr-1"></i>View</button>
+                                    <i data-feather="search" width="20" class="mr-1"></i>Search </button>
                                 </div>
                             </form>
                         </div>
@@ -76,7 +76,7 @@
                         <div class="col-lg-5 col-md-8">
 
                             <button type="submit" class="btn btn-success btn-md rounded-sm d-flex justify-content-between align-items-center">
-                            <i data-feather="check" width="20" class="mr-1"></i>Save</button>
+                            <i data-feather="check" width="20" class="mr-1"></i>Save Payment </button>
                             
                         </div>
                     </div>

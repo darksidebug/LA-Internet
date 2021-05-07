@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PlansController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +25,14 @@ Route::get('/admin/customer/payment', function(){
 Route::get('/admin/customer/lists', function(){
     return view('pages.admin.customer-lists', ['page' => 'TABLE OF CUSTOMERS']);
 })->name('customer-lists');
+
+Route::get('/customer/dashboard', function(){
+    return view('pages.customer.dashboard', ['page' => 'DASHBOARD']);
+})->name('customer-dashboard');
+
+Route::get('/customer/payment/history', function(){
+    return view('pages.customer.payment-history', ['page' => 'PAYMENT HISTORY']);
+})->name('customer-payment-history');
+
+Route::get('/plans', [PlansController::class, 'getPlans']);
 
