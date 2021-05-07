@@ -2,16 +2,20 @@
 
 @section('content')
     <div class="container-fluid mt-5">
+        @if(!$errors->isEmpty())
         <div class="alert alert-warning alert-dismissible fade show pb-0" role="alert">
-            <strong>You have error(s)! </strong> 
+            <strong>{{Str::plural('Error',$errors->count())}} found! </strong> 
             <ul>
-                <li>{{ 'Last name is required' }}</li>
+                @foreach ($errors->all() as $message)
+                <li>{{ $message }}</li>
+                @endforeach
             </ul>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <form method="POST" action="" class="user">
+        @endif
+        <form method="POST" action="{{route('new-customer.store')}}" class="user">
              @csrf
             <div class="row">
                 <div class="col-lg-8 col-md-12">
@@ -38,9 +42,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-9">
 
-                            <select type="text" id="Municipality" class="form-control rounded-sm text-secondary" name="municipality" required value="{{ old('municipality') }}" style="height: 43px;">
+                            <select type="text" id="Municipality" class="form-control rounded-sm text-secondary" name="municipality"  value="{{ old('municipality') }}" style="height: 43px;">
                             </select>
-                            <select type="text" id="Barangay" class="form-control mt-1 rounded-sm text-secondary" name="barangay" required value="{{ old('barangay') }}" style="height: 43px;">
+                            <select type="text" id="Barangay" class="form-control mt-1 rounded-sm text-secondary" name="barangay"  value="{{ old('barangay') }}" style="height: 43px;">
                             </select>
                             <input type="text" name='street' class="form-control form-control-user mt-1" id="Street" value="{{old('street')}}" placeholder="Sitio/Street/Purok">
 
@@ -72,7 +76,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-8 pt-2">
 
-                            <select type="text" id="Plans" class="form-control" name="connection_plan" required value="{{ old('connection_plan') }}">
+                            <select type="text" name="plan_id" id="Plans" class="form-control" name="connection_plan" value="{{ old('connection_plan') }}">
                                 <option value="">Select Plan</option>
                             </select>
 

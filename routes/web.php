@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlansController;
 
@@ -14,9 +15,10 @@ use App\Http\Controllers\PlansController;
 |
 */
 
-Route::get('/admin/new/customer', function(){
-    return view('pages.admin.new-customer', ['page' => 'ADD NEW CUSTOMER']);
-})->name('new-customer');
+Route::get('/admin/new/customer', [CustomersController::class,'register'])->name('new-customer');
+
+Route::post('/admin/new/customer/store',[CustomersController::class,'store'])->name('new-customer.store');
+
 
 Route::get('/admin/customer/payment', function(){
     return view('pages.admin.payment', ['page' => 'CUSTOMER PAYMENT']);
