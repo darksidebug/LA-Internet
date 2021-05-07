@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="row mt-2">
-            <div class="col-lg-5 col-md-6 px-sm-0">
+            <div class="col-lg-5 col-md-8 px-sm-0">
                 <div class="card o-hidden border border-gray shadow-none rounded-sm mt-2 bg-white p-3">
                     <div class="card-body p-0">
                         <h5 class="text-success h6"><span class="text-secondary h6">Amount Paid: </span><strong>PHP 0.00</strong></h5>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row mt-2">
-            <div class="col-lg-5 col-md-6 px-sm-0">
+            <div class="col-lg-5 col-md-8 px-sm-0">
                 <div class="card o-hidden border border-gray shadow-none rounded-sm mt-2 bg-white p-3">
                     <div class="card-body p-0">
                         <h5 class="text-success h6"><span class="text-secondary h6">Amount Paid: </span><strong>PHP 0.00</strong></h5>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="row mt-2">
-            <div class="col-lg-5 col-md-6 px-sm-0">
+            <div class="col-lg-5 col-md-8 px-sm-0">
                 <div class="card o-hidden border border-gray shadow-none rounded-sm mt-2 bg-white p-3">
                     <div class="card-body p-0">
                         <h5 class="text-success h6"><span class="text-secondary h6">Amount Paid: </span><strong>PHP 0.00</strong></h5>

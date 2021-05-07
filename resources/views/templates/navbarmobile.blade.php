@@ -10,13 +10,13 @@
                 </div>
                 <div class="p-1 text-right nav-menu mr-1 right_icons">
                     <a href="#" id="messageTab" name="notification" class="btn btn-sm text-white text-right navData {{Request::is('notifications*') ? 'active-nav-top' : ''}}">
-                        <span width="20px" height="20px" data-feather="bell"></span><span class="badge bg-red">2</span>
+                        <span width="20px" height="20px" data-feather="bell"></span><span class="badge bg-red">0</span>
                     </a>
                     <a id="searchTab" name="searchTab" class="btn btn-sm text-white text-left"><span class="feather-20" data-feather="help-circle"></span></a>
                     <li id="menuTab" name="menu" class="btn btn-sm text-white text-right dropdown">
                         <span class="feather-20" data-feather="menu" data-toggle="dropdown"></span>
                         <ul class="dropdown-menu">
-                            <li><a rel="nofollow" href="#" class="dropdown-item"><i class="fa fa-sign-out"></i> Sign-Out</a></li>
+                            <li><a rel="nofollow" href="#" class="dropdown-item"><i data-feather="log-out" class="feather-18 mr-1"></i> Sign-Out</a></li>
                         </ul>
                     </li>
                 </div>

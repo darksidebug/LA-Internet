@@ -102,7 +102,7 @@ body {
           border-radius: 5px !important; }
         .desktop_nav_wrapper .navbar-holder ul li.bottom-active.active, .mobile_nav_wrapper .navbar-holder ul li.bottom-active.active {
           border-bottom: 4px solid #63FED8 !important;
-          padding-bottom: 5px !important; }
+          padding-bottom: 2px !important; }
   .desktop_nav_wrapper .mobile_nav_2, .mobile_nav_wrapper .mobile_nav_2 {
     background-color: #03CC9A !important; }
     .desktop_nav_wrapper .mobile_nav_2 .active, .mobile_nav_wrapper .mobile_nav_2 .active {
