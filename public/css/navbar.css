@@ -1,0 +1,35 @@
+
+
+.nav-item {
+    text-decoration: none !important;
+    /* transition: 0.3s; */
+}
+.nav-item:hover > a{
+    color: #36393d !important;
+    /* transform: scale(1.1); */
+}
+
+.btn-nav {
+    color:white !important;
+    border-radius:6px;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.btn-nav-active {
+    background-color:#0084ff;
+    border-color:#0084ff;
+    border-radius:6px;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.search-bar {
+    height: 24px;
+    width: 400px;
+    border: none
+}
+
+.bg-red {
+    background-color: #fc3d3d;
+}

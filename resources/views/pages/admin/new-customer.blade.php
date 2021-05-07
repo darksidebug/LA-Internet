@@ -29,9 +29,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-9">
 
-                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="Sitio/Street/Purok">
-                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Barangay">
                             <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Municipality">
+                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Barangay">
+                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="Sitio/Street/Purok">
                             
                         </div>
                     </div>
@@ -56,12 +56,12 @@
             <div class="row mt-4">
                 <div class="col-lg-8 col-md-12">
                     <div class="text-left pb-3">
-                        <h2 class="h5 text-gray mb-0"><strong>CURRENT STATE</strong></h2>
+                        <h2 class="h5 text-gray mb-0"><strong>CONNECTION PLAN</strong></h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-8 pt-2">
 
-                            <input type="checkbox" class="mt-1 mr-2">Within Sogod
+                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" placeholder="Connection plan">
                             
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         <div class="col-lg-5 col-md-8">
 
                             <button type="submit" class="btn btn-success btn-md rounded-sm d-flex justify-content-between align-items-center">
-                            <i data-feather="check" width="20" class="mr-1"></i>Save</button>
+                            <i data-feather="check" width="20" class="mr-1"></i>Save Customer Info</button>
                             
                         </div>
                     </div>

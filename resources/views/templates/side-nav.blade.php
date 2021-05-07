@@ -19,7 +19,7 @@
         </div>
 
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ Request::is('admin/*') ? route('new-customer') : route('customer-dashboard') }}">
                 <i data-feather="layout" width="18"></i>
                 <span class="text-secondary ml-1">Dashboard</span>
             </a>
@@ -42,9 +42,14 @@
             <div id="collapseUser" class="collapse" aria-labelledby="headingUser" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header text-success">System:</h6>
+                    @if(Request::is('admin/*'))
                     <a class="collapse-item text-secondary rounded-sm" href="">New User</a>
                     <a class="collapse-item text-secondary rounded-sm" href="">User Lists</a>
                     <a class="collapse-item text-secondary rounded-sm" href="">User Profiles</a>
+                    @else
+                    <a class="collapse-item text-secondary rounded-sm" href="">My Profile</a>
+                    <a class="collapse-item text-secondary rounded-sm" href="">Change Password</a>
+                    @endif
                 </div>
             </div>
         </li>
@@ -57,6 +62,7 @@
             Management
         </div>
 
+        @if(Request::is('admin/*'))
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                 <i data-feather="user" width="18"></i>
@@ -77,13 +83,14 @@
                 <span class="text-secondary ml-1">Payments</span>
             </a>
         </li>
-
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="{{ url('/employee/lates') }}">
-                <i data-feather="users" width="18"></i>
-                <span class="text-secondary ml-1">Student Information</span>
+        @else
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('payments') }}">
+                <i data-feather="book" width="18"></i>
+                <span class="text-secondary ml-1">Payments History</span>
             </a>
-        </li> -->
+        </li>
+        @endif
 
         <hr class="sidebar-divider">
 
