@@ -2,6 +2,15 @@
 
 @section('content')
     <div class="container-fluid mt-5">
+        <div class="alert alert-warning alert-dismissible fade show pb-0" role="alert">
+            <strong>You have error(s)! </strong> 
+            <ul>
+                <li>{{ 'Last name is required' }}</li>
+            </ul>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <form method="POST" action="" class="user">
              @csrf
             <div class="row">
