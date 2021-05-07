@@ -14,6 +14,14 @@ use App\Http\Controllers\PlansController;
 |
 */
 
+Route::get('/admin/login', function(){
+    return view('pages.admin.login');
+})->name('login');
+
+Route::get('/customer/login', function(){
+    return view('pages.customer.login');
+})->name('login');
+
 Route::get('/admin/new/customer', function(){
     return view('pages.admin.new-customer', ['page' => 'ADD NEW CUSTOMER']);
 })->name('new-customer');
