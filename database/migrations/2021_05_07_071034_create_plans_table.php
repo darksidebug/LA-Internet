@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RenameTimeLogsTable extends Migration
+class CreatePlansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class RenameTimeLogsTable extends Migration
      */
     public function up()
     {
-        // Schema::dropIfExists('employee_time_logs');
-        Schema::rename('employee_time_logs','time_logs');
-
+        Schema::create('plans', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->double('sogod_rate');
+            $table->double('outside_sogod_rate');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -25,7 +29,6 @@ class RenameTimeLogsTable extends Migration
      */
     public function down()
     {
-        Schema::rename('time_logs','employee_time_logs');
-
+        Schema::dropIfExists('plans');
     }
 }

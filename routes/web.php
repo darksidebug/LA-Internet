@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/admin/new/school-branch', function(){
+Route::get('/admin/new/customer', function(){
     return view('pages.admin.new-customer', ['page' => 'ADD NEW CUSTOMER']);
 })->name('new-customer');
 
