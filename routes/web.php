@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PlansController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,6 @@ Route::get('/customer/dashboard', function(){
 Route::get('/customer/payment/history', function(){
     return view('pages.customer.payment-history', ['page' => 'PAYMENT HISTORY']);
 })->name('customer-payment-history');
+
+Route::get('/plans', [PlansController::class, 'getPlans']);
 

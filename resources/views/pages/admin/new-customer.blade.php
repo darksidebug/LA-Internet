@@ -11,11 +11,11 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-9">
-                            
-                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="First name">
-                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Middle name">
-                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Last name">
-                            
+
+                            <input type="text" name='first_name' class="form-control form-control-user" id="first_name" value="{{old('first_name')}}" placeholder="First name">
+                            <input type="text" name='middle_name' class="form-control form-control-user mt-1" id="middl_ename" value="{{old('middle_name')}}" placeholder="Middle name">
+                            <input type="text" name='last_name' class="form-control form-control-user mt-1" id="last_name" value="{{old('last_name')}}" placeholder="Last name">
+
                         </div>
                     </div>
                 </div>
@@ -29,10 +29,12 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-9">
 
-                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Municipality">
-                            <input type="text" name='username' class="form-control form-control-user mt-1" id="exampleInputUser" value="{{old('username')}}" placeholder="Barangay">
-                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="Sitio/Street/Purok">
-                            
+                            <select type="text" id="Municipality" class="form-control rounded-sm text-secondary" name="municipality" required value="{{ old('municipality') }}" style="height: 43px;">
+                            </select>
+                            <select type="text" id="Barangay" class="form-control mt-1 rounded-sm text-secondary" name="barangay" required value="{{ old('barangay') }}" style="height: 43px;">
+                            </select>
+                            <input type="text" name='street' class="form-control form-control-user mt-1" id="Street" value="{{old('street')}}" placeholder="Sitio/Street/Purok">
+
                         </div>
                     </div>
                 </div>
@@ -46,8 +48,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-9">
 
-                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="09xxxxxxxxx">
-                            
+                            <input type="text" name='contact_number' class="form-control form-control-user" id="exampleInputUser" value="{{old('username')}}" placeholder="09xxxxxxxxx">
+
                         </div>
                     </div>
                 </div>
@@ -59,10 +61,12 @@
                         <h2 class="h5 text-gray mb-0"><strong>CONNECTION PLAN</strong></h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-5 col-md-8 pt-2">
+                        <div class="col-lg-6 col-md-8 pt-2">
 
-                            <input type="text" name='username' class="form-control form-control-user" id="exampleInputUser" placeholder="Connection plan">
-                            
+                            <select type="text" id="Plans" class="form-control" name="connection_plan" required value="{{ old('connection_plan') }}">
+                                <option value="">Select Plan</option>
+                            </select>
+
                         </div>
                     </div>
                 </div>
@@ -75,11 +79,13 @@
 
                             <button type="submit" class="btn btn-success btn-md rounded-sm d-flex justify-content-between align-items-center">
                             <i data-feather="check" width="20" class="mr-1"></i>Save Customer Info</button>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </form>
     </div>
+
+    <script src="{{asset('js/r8.js')}}"></script>
 @endsection
