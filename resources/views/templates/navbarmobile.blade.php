@@ -5,7 +5,7 @@
                 <div class="p-1">
                     <div class="nav_brand">
                         <span><a href="/"></a></span>
-                        <span class="pt-2"><strong>LA</strong>-INTERNET</span>
+                        <span class="pt-2"><strong>LA-ICM</strong></span>
                     </div>
                 </div>
                 <div class="p-1 text-right nav-menu mr-1 right_icons">
@@ -41,8 +41,8 @@
                     </a>
                 </div>
             </div>
-            <div class="col-4 p-1 text-center text-white active-nav-top active">
-                <a href="#" id="searchTab" class="btn btn-sm text-white text-center navData">
+            <div class="col-4 p-1 text-center text-white {{ Request::is('customer/payment/history') ? 'top-active active active' : '' }}">
+                <a href="{{ route('customer-payment-history') }}" id="searchTab" class="btn btn-sm text-white text-center navData">
                     <span class="feather-20" data-feather="briefcase"></span>
                     <div class="f-12">Billings</div>
                 </a>
@@ -52,13 +52,13 @@
     <div class="fixed-bottom fixed_bottom">
         <div class="container-fluid bottom_nav">
             <div class="row">
-                <div class="col-3 p-2 text-center {{(Request::is('/')) ? 'active-nav' : ''}}">
-                    <a href="#" class="navData f-11">
-                        <span class="feather-18" data-feather="home"></span>
-                        <div>Home</div>
+                <div class="col-3 p-2 text-center {{(Request::is('customer/dashboard')) ? 'active-nav bottom-active active' : ''}}">
+                    <a href="{{ route('customer-dashboard') }}" class="navData f-11">
+                        <span class="feather-18" data-feather="layout"></span>
+                        <div>Dashboard</div>
                     </a>
                 </div>
-                <div class="col-3 p-2 text-center {{Request::is('my-tools*') ? 'active-nav' : ''}} bottom-active active">
+                <div class="col-3 p-2 text-center {{Request::is('settings') ? 'active-nav' : ''}}">
                     <a href="#" disabled="disabled" class="navData f-11">
                         <span class="feather-18" data-feather="settings"></span>
                         <div>Settings</div>

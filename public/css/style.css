@@ -101,7 +101,7 @@ body {
           background-color: #04c292;
           border-radius: 5px !important; }
         .desktop_nav_wrapper .navbar-holder ul li.bottom-active.active, .mobile_nav_wrapper .navbar-holder ul li.bottom-active.active {
-          border-bottom: 4px solid #fff !important;
+          border-bottom: 4px solid #63FED8 !important;
           padding-bottom: 5px !important; }
   .desktop_nav_wrapper .mobile_nav_2, .mobile_nav_wrapper .mobile_nav_2 {
     background-color: #03CC9A !important; }
@@ -1114,4 +1114,9 @@ body {
 }
 .customer .border-success{
   border-color: #03CC9A !important;
+}
+
+.customer select{
+  outline: none !important;
+  border: none !important;
 }
