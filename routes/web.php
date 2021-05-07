@@ -15,24 +15,10 @@ use App\Http\Controllers\PlansController;
 |
 */
 
-<<<<<<< HEAD
-Route::get('/admin/login', function(){
-    return view('pages.admin.login');
-})->name('login');
-
-Route::get('/customer/login', function(){
-    return view('pages.customer.login');
-})->name('login');
-
-Route::get('/admin/new/customer', function(){
-    return view('pages.admin.new-customer', ['page' => 'ADD NEW CUSTOMER']);
-})->name('new-customer');
-=======
 Route::get('/admin/new/customer', [CustomersController::class,'register'])->name('new-customer');
 
 Route::post('/admin/new/customer/store',[CustomersController::class,'store'])->name('new-customer.store');
 
->>>>>>> 762c88150a99290c43796ff3828d93af8ea0b684
 
 Route::get('/admin/customer/payment', function(){
     return view('pages.admin.payment', ['page' => 'CUSTOMER PAYMENT']);
