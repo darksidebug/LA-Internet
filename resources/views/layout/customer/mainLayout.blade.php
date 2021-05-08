@@ -43,15 +43,6 @@
 
     <!-- main content -->
     @yield('content')
-
-    <footer class="sticky-footer bg-white mt-5">
-        <div class="container my-auto pt-5">
-            <div class="copyright text-center my-auto pt-5">
-                <span>@2021-LA Internet & CM</span>&nbsp;&nbsp;
-                <span class="text-mute pt-3">Developed By: <a href="#" class="text-success pt-3"><strong>JAB Softwre Solutions</strong></a></span>
-            </div>
-        </div>
-    </footer>
     
     <!-- data feather -->
     <script rel='prefetch prerender' src="{{asset('js/feather.min.js')}}"></script>

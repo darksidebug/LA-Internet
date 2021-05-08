@@ -1,9 +1,9 @@
 @extends('layout.customer.mainLayout')
 
 @section('content')
-    <div class="container customer">
+    <div class="container customer pb-3">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 pl-md-0">
                 <h5>MY DASHBOARD</h5>
             </div>
         </div>
@@ -41,12 +41,14 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row mt-4">
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-md-12">
-                <a href="3" class="text-success">See billing history</a>
+                <a href="{{ route('customer-payment-history') }}" class="text-secondary">See billing history</a>
             </div>
         </div>
     </div>
+    @include('templates.footer')
     
 @endsection
