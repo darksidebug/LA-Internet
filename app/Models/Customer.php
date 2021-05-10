@@ -22,6 +22,7 @@ class Customer extends Model
         'barangay',
         'municipality',
         'plan_id',
+        'next_billing',
         'password'
     ];
 }

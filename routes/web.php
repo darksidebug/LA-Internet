@@ -18,6 +18,7 @@ use App\Http\Controllers\PlansController;
 
 // });
 
+
 Route::get('/admin/login', function(){
     return view('pages.admin.login');
 })->name('login');
