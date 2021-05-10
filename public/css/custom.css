@@ -1,0 +1,55 @@
+.login h2, .login h3{
+    transition: all 0.3s ease !important;
+}
+
+.login input{
+    height: 45px !important;
+}
+
+@media screen and (max-width: 1199px) {
+    .login h2{
+        font-size: 1.8rem !important;
+    }
+
+    .login h3{
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .login h2{
+        font-size: 1.5rem !important;
+    }
+
+    .login h3{
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .login h2{
+        font-size: 1.3rem !important;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    .login h3{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login h2{
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .login h2{
+        font-size: 1.1rem !important;
+    }
+
+    .login h3{
+        font-size: 1rem !important;
+    }
+}
