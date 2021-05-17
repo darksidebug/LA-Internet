@@ -14,6 +14,10 @@ use App\Http\Controllers\PlansController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::middleware(['auth'])->prefix('admin')->group(function () {
+
+// });
+
 
 Route::get('/admin/login', function(){
     return view('pages.admin.login');

@@ -22,6 +22,7 @@ class CreateCustomersTable extends Migration
             $table->string('barangay');
             $table->string('municipality');
             $table->foreignId('plan_id')->constrained('plans')->onDelete('cascade');
+            $table->date('next_billing');
             $table->string('password');
             $table->timestamps();
         });

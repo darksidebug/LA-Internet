@@ -4,7 +4,7 @@
     <div class="container-fluid mt-5">
         @if(!$errors->isEmpty())
         <div class="alert alert-warning alert-dismissible fade show pb-0" role="alert">
-            <strong>{{Str::plural('Error',$errors->count())}} found! </strong> 
+            <strong>{{Str::plural('Error',$errors->count())}} found! </strong>
             <ul>
                 @foreach ($errors->all() as $message)
                 <li>{{ $message }}</li>
